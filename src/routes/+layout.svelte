@@ -6,4 +6,6 @@
     Alpha
 </div>
 
+<main class="max-w-[1200px] px-2 mx-auto">
 <slot></slot>
+</main>
