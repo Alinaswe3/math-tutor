@@ -50,12 +50,12 @@
 
 </script>
 
-<section class="mx-auto w-fit min-h-[30rem] h-[90vh] mt-8 flex gap-8 flex-col ">
+<section class="container">
     <h1 class="text-4xl text-center mb-3">Select a question paper to revise</h1>
     <input type="text" placeholder="Search for paper"
            bind:value={searchVal}
            class="input input-sm input-bordered input-primary w-full max-w-lg"/>
-    <div class="papers w-full h-fit overflow-y-auto flex flex-col gap-6 py-6 pl-1">
+    <div class="papers w-full h-fit overflow-y-auto flex flex-col gap-6 py-6 px-2">
         {#each papers.filter((paper) => paper.paperName.toLowerCase().includes(searchVal.toLowerCase())) as paper}
             <PaperCard {paper}/>
         {/each}
