@@ -50,7 +50,7 @@
 
 </script>
 
-<section class="container">
+<section class="mx-auto w-fit min-h-[30rem] h-[90vh] mt-8 flex gap-8 flex-col">
     <h1 class="text-4xl text-center mb-3">Select a question paper to revise</h1>
     <input type="text" placeholder="Search for paper"
            bind:value={searchVal}
