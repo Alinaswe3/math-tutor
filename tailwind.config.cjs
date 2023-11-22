@@ -3,9 +3,10 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {
-
-		}
+		screens: {
+			'md': {'max': '38em'},
+		},
+		extend: {}
 	},
 
 	plugins: [require("daisyui")],
